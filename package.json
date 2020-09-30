@@ -1,0 +1,12 @@
+{
+  "name": "blockchain-ethereum-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "scripts": {
+    "watch": "watchman-make -p '**/*.js' '**/*.sol' --run \"truffle test --network development\""
+  }
+}
