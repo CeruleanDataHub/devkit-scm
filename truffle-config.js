@@ -8,6 +8,11 @@ module.exports = {
       port: 8545,
       network_id: '*',
     },
+    truffle_develop: {
+      host: '*',
+      port: 9545,
+      network_id: '*',
+    },
     loc_development_development: {
       network_id: '*',
       port: 8545,
