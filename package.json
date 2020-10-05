@@ -7,6 +7,7 @@
     "truffle-hdwallet-provider": "^1.0.17"
   },
   "scripts": {
-    "watch": "watchman-make -p '**/*.js' '**/*.sol' --run \"truffle test --network development\""
+    "watch": "watchman-make -p '**/*.js' '**/*.sol' --run \"truffle test --network development\"",
+    "test": "truffle test --network development"
   }
 }
