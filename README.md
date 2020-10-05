@@ -15,6 +15,8 @@ There's two ways to run the test: Truffle Develop and Ganache-CLI. Complete the 
 ### Prerequisites
 * Download and install the latest LTS of NodeJS.
 * Install Truffle.js on your machine globally via NPM with a `npm install -g truffle`.
+* Create .env file to the project root and copy the content of env.example to it (seed phrase  in the env.example file is randomly generated and it should not be used in production).
+* Install dependencies with `npm install`. 
 
 #### Run the tests with Truffle Develop
 * In the project root start Truffle's development console with a `truffle develop`.
