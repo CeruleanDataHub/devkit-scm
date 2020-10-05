@@ -15,19 +15,19 @@ contract('DevkitFactory', (accounts) => {
     addressStub = accounts[1]
   })
 
-  it('creates devkit', async () => {
+  it('when creating devkit, creates devkit', async () => {
     const actual = await contract.createDevkit(idStub, nameStub)
 
     assert(actual)
   })
 
-  it('gets address with a devkit id', async () => {
+  it('when calling for an address with a devkit id, knows default address', async () => {
     const actual = await contract.addresses(idStub)
 
     assert(isValidAddress(actual))
   })
 
-  it('given set component is called, maps component ID to correct address', async () => {
+  it('when setComponent is called, maps component ID to correct address', async () => {
     await contract.setComponent(componentIdStub, addressStub)
 
     const actual = await contract.components(componentIdStub)
@@ -45,7 +45,7 @@ contract('DevkitFactory', (accounts) => {
       await contract.createDevkit(idStub, nameStub)
     })
 
-    it('throws an error when creating devkit with a duplicate id', async () => {
+    it('when creating devkit with a duplicate id, throws', async () => {
       let errorMessage
 
       try {
